@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darktheme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowadd_nameingredient"
+            android:text="Tequila"
+            android:textColor="@color/duckblue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowadd_quantityingredient"
+            android:text="10"
+            android:textColor="@color/white"
+            android:layout_marginTop="0dp"
+            android:textSize="15dp"
+            android:layout_toLeftOf="@+id/rowadd_whichquantityingredient"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rowadd_whichquantityingredient"
+            android:text="ml"
+            android:textColor="@color/duckblue"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="40dp"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/rowadd_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rowadd_nameingredient"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mojito" />
+
+        <TextView
+            android:id="@+id/titreCocktail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/icone"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/icone"
+            android:textStyle="bold"
+            android:text="Mojito" />
+
+        <TextView
+            android:id="@+id/descriptionCocktail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Je suis un très bon cocktail"
+            android:layout_below="@id/titreCocktail"
+            android:layout_toRightOf="@id/icone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="italic"
+            android:textSize="10dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

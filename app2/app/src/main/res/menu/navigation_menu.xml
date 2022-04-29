@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/ic_local_bar"
+        android:title="Cocktails">
+    </item>
+    <item
+        android:id="@+id/menuProfile2"
+        android:icon="@drawable/ic_ingredient"
+        android:title="Ingredients"/>
+
+
+    <item android:title="Exit">
+        <menu>
+
+            <item
+                android:id="@+id/firstexit"
+                android:icon="@drawable/ic_exit_blue"
+                android:title="Main Menu"/>
+            <item
+                android:id="@+id/secondexit"
+                android:icon="@drawable/ic_exit_red"
+                android:title="Exit Application"/>
+
+
+
+        </menu>
+
+    </item>
+
+</menu>

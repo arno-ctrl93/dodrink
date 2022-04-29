@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darktheme">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/clear"
+                android:scaleType="fitCenter"
+                android:background="@color/darktheme"
+                android:id="@+id/add_cancel_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Cocktail"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/duckblue"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+            <ImageButton
+                android:id="@+id/add_complete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/complete"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:background="@color/darktheme"
+                />
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/pictureadd"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:background="@color/darktheme"
+            android:id="@+id/addpicture"
+            android:layout_below="@id/firstlayout"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addpicture"
+            android:id="@+id/add_name_text"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+
+        />
+
+        <EditText
+            android:id="@+id/nameimput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:layout_weight="1"
+            android:layout_below="@id/add_name_text"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/duckblue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <CheckBox
+            android:id="@+id/check_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Alcohol Cocktail"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/nameimput"
+            android:textColor="@color/white"
+            android:checked="true"
+            />
+
+        <Spinner
+            android:id="@+id/typeofalcohol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameimput"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/check_alcohol"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/darktheme"
+            android:popupBackground="@color/darktheme"
+            />
+
+        <TextView
+            android:id="@+id/textfordescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_alcohol"
+            android:textColor="@color/white"
+            android:text="Description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textfordescription"
+            android:lines="3"
+            android:hint="Typical cocktail in Latine America..."
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:backgroundTint="@color/duckblue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/text_preparation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editdescription"
+            android:textColor="@color/white"
+            android:text="Steps of preparation"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editpreparation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_preparation"
+            android:lines="3"
+            android:textColor="@color/white"
+            android:hint="1. Mix two ingredients together..."
+            android:textColorHint="@color/white"
+            android:textStyle="italic"
+            app:backgroundTint="@color/duckblue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/text_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editpreparation"
+            android:textColor="@color/white"
+            android:text="Ingredients"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editaddingredient_name"
+            android:layout_below="@+id/text_ingredient"
+            android:layout_marginLeft="10dp"
+            app:backgroundTint="@color/duckblue"
+            android:hint="Name..."
+            android:textColor="@color/white"
+            android:textColorHint="@color/greenduck"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editaddingredient_quantity"
+            android:layout_below="@+id/text_ingredient"
+            android:layout_toRightOf="@+id/editaddingredient_name"
+            app:backgroundTint="@color/duckblue"
+            android:hint="1..."
+            android:textColor="@color/white"
+            android:textColorHint="@color/greenduck"
+            />
+        <Spinner
+            android:id="@+id/editaddingredient_whichquantity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editaddingredient_quantity"
+            android:layout_below="@id/text_ingredient"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/darktheme"
+            android:popupBackground="@color/darktheme"
+            />
+
+        <Button
+            android:id="@+id/editaddingredient_add"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/text_ingredient"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/duckblue"
+            android:textColor="@color/black"
+            android:text="ADD"
+
+            />
+
+
+        <ListView
+            android:id="@+id/listview_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_below="@id/editaddingredient_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/darktheme"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
